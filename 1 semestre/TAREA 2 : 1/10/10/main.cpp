@@ -1,0 +1,29 @@
+//
+//  main.cpp
+//  10
+//
+//  Created by Diego Márquez on 29/10/20.
+//
+
+#include <iostream>
+#include <stdio.h>
+
+int main(void){
+int I, J, NUM, SUM, C=0;
+printf("\nIngrese el numero limite: ");
+scanf("%d", &NUM);
+for (I = 1; I <= NUM; I++){
+    SUM = 0;
+    for (J = 1; J <= (I / 2); J++)
+        if ((I % J) == 0)
+            SUM += J;
+    if (SUM == I)
+    {
+        printf("\n%d es un numero perfecto",I);
+        C++;
+    }
+}
+printf("\nEntre 1 y %d hay %d numeros perfectos", NUM, C);
+}
+
+
