@@ -1,0 +1,21 @@
+//
+//  main.cpp
+//  7
+//
+//  Created by Diego Márquez on 29/10/20.
+//
+
+#include <iostream>
+#include <stdio.h>
+
+int main(void) {
+    int I, PRI=0, SEG=1, SIG;
+    printf("\t %d \t %d",PRI,SEG);
+    for (I=3;I<=50;I++){
+        SIG=PRI+SEG;
+        PRI=SEG;
+        SEG=SIG;
+        printf("\t %d",SIG);
+    }
+    
+}
